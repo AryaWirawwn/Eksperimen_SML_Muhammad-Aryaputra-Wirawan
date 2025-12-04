@@ -56,12 +56,13 @@ def preprocess_data(data_path: str) -> pd.DataFrame:
     return df
 
 if __name__ == "__main__":
-    os.makedirs('preprocessing', exist_ok=True)
+    
+    os.makedirs(OUTPUT_DIR, exist_ok=True)
     
     print("Memulai proses preprocessing data untuk GitHub Actions...")
     preprocessed_df = preprocess_data(DATA_URL)
 
     if not preprocessed_df.empty:
-        output_path = os.path.join('preprocessing', OUTPUT_FILENAME)
+        output_path = os.path.join(OUTPUT_DIR, OUTPUT_FILENAME)
         preprocessed_df.to_csv(output_path, index=False)
         print(f"\nPreprocessing selesai. Data siap dilatih disimpan di: {output_path}")

@@ -39,7 +39,7 @@ jobs:
         uses: stefanzweifel/git-auto-commit-action@v5
         with:
           file_pattern: 'preprocessing/dataset_mesin_membangun_sistem_machine_learning_preprocessing.csv'
-          commit_message: '🤖 [CI] Auto-generated preprocessed dataset'
+          commit_message: '[CI] Auto-generated preprocessed dataset'
           commit_user_name: 'github-actions[bot]'
           commit_user_email: 'github-actions[bot]@users.noreply.github.com'
           commit_author: 'Muhammad-Aryaputra-Wirawan <your-github-email@example.com>'
