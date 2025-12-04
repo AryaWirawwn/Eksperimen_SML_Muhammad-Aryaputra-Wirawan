@@ -2,7 +2,7 @@ import pandas as pd
 import os
 
 DATA_URL = 'https://docs.google.com/spreadsheets/d/e/2PACX-1vT5qaBV39KxL2ViGJdv1_8J6zOj-U59NGL6BbfxRW_0Mf5mGAWkat7o25CNGKaLJGyry9BAOOaXgiD7/pub?gid=352973935&single=true&output=csv'
-OUTPUT_FILENAME = 'dataset_mesin_membangun_sistem_machine_learning_preprocessing.csv'
+OUTPUT_FILENAME = './preprocessing/dataset_mesin_membangun_sistem_machine_learning_preprocessing.csv'
 
 def preprocess_data(data_path: str) -> pd.DataFrame:
     """
